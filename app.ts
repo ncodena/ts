@@ -16,11 +16,31 @@ const printResult = true;
 const resultPhrase =  'Result is: ';
 add(number1, number2, printResult, resultPhrase);
 
-// Objects
+// Objects and arrays
+
+// const person: {
+//     name: string;
+//     age: number;
+// } = {
+//     name: 'Colt',
+//     age: 26
+// };
 
 const person = {
-    name: 'Joan',
-    age: 26
+    name: 'Colt',
+    age: 26,
+    hobbies: ['Sports', 'Cooking', 'Cycling', 'Baking', 'Playing']
 };
 
-console.log(person)
+let favouriteActivities: string[];
+favouriteActivities = ['Cycling'];
+
+console.log(person.name)
+
+for(const hobby of person.hobbies) {
+    console.log(hobby.toUpperCase())
+}
+
+
+
+
