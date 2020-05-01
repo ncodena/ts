@@ -63,7 +63,17 @@ person2.role = [0, 'user']
 
 console.log(person2)
 
+// Enum => It gives an enumerated list in which the labels are translated into numbers starting at 0.
+// It assigns labels to numbers
 
+enum Role { ADMIN, READ_ONLY, AUTHOR };
+
+const person3 = {
+    name: 'Eva',
+    age: 26,
+    hobbies: ['Sports', 'Cooking', 'Cycling', 'Baking', 'Playing'],
+    role: Role.ADMIN
+};
 
 
 
