@@ -1,4 +1,4 @@
-// Core types
+// Number, string and boolean
 
 function add (n1: number, n2: number, showResult: boolean, phrase: string) {
     console.log(typeof number2)
@@ -16,7 +16,7 @@ const printResult = true;
 const resultPhrase =  'Result is: ';
 add(number1, number2, printResult, resultPhrase);
 
-// Objects and arrays
+// Object, array
 
 // const person: {
 //     name: string;
@@ -40,6 +40,31 @@ console.log(person.name)
 for(const hobby of person.hobbies) {
     console.log(hobby.toUpperCase())
 }
+
+// Tuple => fixed-length-type array. It throws an error if it does not follow the rule
+
+const person2: {
+    name: string;
+    age: number;
+    hobbies: string[];
+    role: [number, string]
+
+} = {
+    name: 'Max',
+    age: 36,
+    hobbies: ['Sports', 'Cooking', 'Cycling', 'Baking', 'Playing'],
+    role: [2, 'author']
+};
+
+// Push method is an exception which is allowed in tuples
+// person2.role.push('admin');
+
+person2.role = [0, 'user']
+
+console.log(person2)
+
+
+
 
 
 
