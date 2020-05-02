@@ -75,6 +75,9 @@ const person3 = {
     role: Role.ADMIN
 };
 
+// Any => you can store anyt kind of value, mp specific type assignment
+// The TypesCript compiler is not able no check types since the function is disabled by using any, which can expectg to store any existent type.
+
 
 
 
